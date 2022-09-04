@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000;
 
 (async () => {
   try {
+    console.log("ayoo");
     await app.prepare();
     const server = express();
     server.get("/hello", async (req: Request, res: Response) =>

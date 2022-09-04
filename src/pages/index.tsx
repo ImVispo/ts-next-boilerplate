@@ -1,7 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
 import { getHello } from "../services/service";
-import "../styles/index.css";
 
 type PageProps = {
   hello: string;
@@ -13,7 +12,7 @@ const IndexPage: NextPage<PageProps> = ({ hello }: PageProps) => (
     create a web application.
     <br />
     Created by <a href="https://nickholas.dev">Nickholas Boboaca</a>
-    hello {hello}
+    <h1 className="text-3xl font-extrabold underline">Hello {hello}!</h1>
   </div>
 );
 
